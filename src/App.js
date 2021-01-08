@@ -12,7 +12,7 @@ export default function App() {
   const [bad, setBad] = useState(0);
 
   const handleIncrement = (event) => {
-    const name = event.target.name;
+    const { name } = event.target;
 
     switch (name) {
       case 'good':
